@@ -11,8 +11,18 @@ body {
 header {
   width: 100%;
   height: 40px;
-  background: #32e2c5;
+  background: #ebebe9;
   box-shadow: -1px -2px 10px -1px #000;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  background: #00f8f8;
+
 }
 
 #logo {
@@ -28,15 +38,16 @@ header {
 #menu {
   position: absolute;
   left: 55px;
-  top: 8px;
+  top: 9px;
   bottom: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 #menu ul li {
   list-style: none;
   float: left;
+  height: 40px;
 }
 
 #menu ul li a {
@@ -49,42 +60,75 @@ header {
 }
 
 #file ul {
-  background: #32e2c5;
+  background: #ebebe9;
   position: absolute;
-  top: 33px;
+  top: 32px;
   left: 0;
   right: 0;
-  width: 250px;
+  width: 240px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 3px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.404);
-  display: block;
-  z-index: 1;
+  display: none;
 }
 
-#menu ul li a:hover {
-  background: #fa98e1d0;
+#edit ul {
+  background: #ebebe9;
+  position: absolute;
+  top: 32px;
+  left: 66px;
+  right: 0;
+  width: 240px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.404);
+  display: none;
+}
+
+#select ul {
+  background: #ebebe9;
+  position: absolute;
+  top: 32px;
+  left: 131px;
+  right: 0;
+  width: 320px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.404);
+  display: none;
+}
+
+#menu ul li:hover a {
+  background: #0468ff77;
+  border-radius: 2px;
+}
+
+#menu ul li:hover #list {
+  display: block;
 }
 
 #file ul li {
   float: none;
   font-size: 13px;
+  height: 25px;
 }
 
-#file ul li #select p {
+#file ul li div p {
   float: left;
   padding-top: 4px;
   cursor: default;
 }
 
-#file ul li #select span {
+#file ul li div span {
   float: right;
   padding-top: 4px;
   cursor: default;
 }
 
-#file ul li #select {
+#file ul li div {
   height: 25px;
   width: 100%;
   text-align: center;
@@ -101,6 +145,84 @@ header {
   border-bottom: 1px solid #000;
 }
 
-#file ul li #select:hover {
-  background: #fa98e1d0;
+#file ul li div:hover {
+  background: #0468ff77;
+}
+
+#edit ul li {
+  float: none;
+  font-size: 13px;
+  height: 25px;
+}
+
+#edit ul li div p {
+  float: left;
+  padding-top: 4px;
+  cursor: default;
+}
+
+#edit ul li div span {
+  float: right;
+  padding-top: 4px;
+  cursor: default;
+}
+
+#edit ul li div {
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 3px;
+
+}
+
+#edit #line {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid #000;
+}
+
+#edit ul li div:hover {
+  background: #0468ff77;
+}
+
+#select ul li {
+  float: none;
+  font-size: 13px;
+  height: 25px;
+}
+
+#select ul li div p {
+  float: left;
+  padding-top: 4px;
+  cursor: default;
+}
+
+#select ul li div span {
+  float: right;
+  padding-top: 4px;
+  cursor: default;
+}
+
+#select ul li div {
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 3px;
+
+}
+
+#select #line {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid #000;
+}
+
+#select ul li div:hover {
+  background: #0468ff77;
 }
